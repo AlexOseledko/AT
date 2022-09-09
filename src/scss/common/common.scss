@@ -1,0 +1,154 @@
+body {
+    background: linear-gradient(135deg, rgba(15, 0, 29, 1) 0%, rgb(64, 0, 124) 100%);
+    background-attachment: fixed;
+}
+
+.coins-img-1,
+.coins-img-2 {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.coins-img-2 {
+    left: initial;
+    right: 0;
+}
+
+.navbar {
+    background: #2b0062;
+}
+
+.bg-accent {
+    background: $accent-color;
+}
+
+.modal-bg {
+    background-color: $modal-bg;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    transition: color ease $fast;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+.btn-main {
+    background: linear-gradient(-135deg, #ab00c2 0.56%, #df0143 100%);
+    color: #fff;
+    transition: all ease $fast;
+
+    &:hover {
+        background: linear-gradient(-135deg, #cf0542 0.56%, #da6900 100%);
+        color: #fff;
+    }
+}
+
+.apper-btn {
+    position: fixed;
+    z-index: 10;
+    height: 200px;
+    width: 200px;
+    bottom: -8px;
+    right: 16px;
+    opacity: 0;
+    transition: opacity ease $slow;
+
+    &.show {
+        opacity: 1;
+    }
+
+    img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .btn {
+        margin-top: 80px;
+    }
+}
+
+
+
+
+// ====== Register ==================================================
+
+main {
+    min-height: 100vh;
+}
+
+.modal-container {
+    position: relative;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.form-control {
+    color: #fff !important;
+    background-color: $modal-bg  !important;
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  
+
+.preloader {
+    display: none;
+}
+
+.preloader.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.24);
+
+}

@@ -1,0 +1,20 @@
+$theme-colors: (
+  primary:       $yellow-500,
+  secondary:     $gray-600,
+  success:       $green,
+  info:          $cyan,
+  warning:       $yellow,
+  danger:        $red,
+  light:         $gray-100,
+  dark:          $gray-900,
+);
+
+$accent-color: #ffc720;
+$link-color: #ffc720;
+$link-hover-color: #f7d676;
+
+$modal-bg: #090033;
+$nav-bg: #4c0079;
+
+$fast: 0.3s;
+$slow: 0.5s;
