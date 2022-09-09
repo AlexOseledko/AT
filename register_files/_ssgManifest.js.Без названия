@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fbingo\u002Fmini-games","\u002Flegal\u002Fprivacy","\u002Flegal\u002Fresponsible-play","\u002Flegal\u002Fsweepstakes-rules","\u002Fprivacy","\u002Fpromotions\u002Fcollect-free-coins","\u002Fpromotions\u002Frefer-a-friend","\u002Fresponsible-play","\u002Fsweepstakes-rules"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
