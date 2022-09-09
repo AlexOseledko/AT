@@ -5,104 +5,107 @@
 })
 
 <body class="text-white">
+  <div class="bg-wraper pb-5">
 
-  <img src="./images/coins1.png" alt="" class="coins-img-1">
-  <img src="./images/coins2.png" alt="" class="coins-img-2">
+    <img src="./images/coins1.png" alt="" class="coins-img-1">
+    <img src="./images/coins2.png" alt="" class="coins-img-2">
 
-  @@include('modules/header.html', {})
+    @@include('modules/header.html', {})
 
-  <main>
-    <div class="container">
-      <div class="row">
+    <main>
+      <div class="container">
+        <div class="row">
 
-        <div class="col-12 col-md-6 offset-md-3">
-          <div class="modal-container modal-bg rounded px-3 py-3 px-lg-5 py-lg-5">
-            <form id="main-form" action="">
+          <div class="col-12 col-md-6 offset-md-3">
+            <div class="modal-container modal-bg rounded px-3 py-3 px-lg-5 py-lg-5">
+              <form id="main-form" action="">
 
-            <div class="row">
-              <div class="col d-flex justify-content-center my-5">
-                <img class="img-fluid" width="80" src="./images/logo_white.svg" alt="">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <div class="mb-3">
-                  <label for="first-name" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="first-name" pattern="^[a-z,A-Z]{2,}$" required
-                    title="Minimum 2 characters, only uppercase and lowercase Latin letters are allowed.">
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6">
-                <div class="mb-3">
-                  <label for="second-name" class="form-label">Second name</label>
-                  <input type="text" class="form-control" id="second-name" pattern="^[a-z,A-Z]{2,}$" required
-                    title="Minimum 2 characters, only uppercase and lowercase Latin letters are allowed.">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" required>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="password" aria-describedby="passwordHelp"
-                    minlength="6" maxlength="20"
-                    pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                    placeholder="Your password" required
-                    title="The password must have a 8-20 characters. At least one number & one uppercase letter.">
-                  <div id="passwordHelp" class="form-text">8-20 characters. At least one number & one uppercase letter.
+                <div class="row">
+                  <div class="col d-flex justify-content-center my-5">
+                    <img class="img-fluid" width="80" src="./images/logo_white.svg" alt="">
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col">
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                  <label class="form-check-label" for="exampleCheck1">
-                    I am at least 18 years old and not a resident of the State of
-                    Washington, Nevada or Idaho. <br>By creating an account or using the services provided on Aladdin's
-                    treasure, I agree to be bound by the Aladdin's treasure.
-                  </label>
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="first-name" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="first-name" pattern="^[a-z,A-Z]{2,}$" required
+                        title="Minimum 2 characters, only uppercase and lowercase Latin letters are allowed.">
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="second-name" class="form-label">Second name</label>
+                      <input type="text" class="form-control" id="second-name" pattern="^[a-z,A-Z]{2,}$" required
+                        title="Minimum 2 characters, only uppercase and lowercase Latin letters are allowed.">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" aria-describedby="passwordHelp"
+                        minlength="6" maxlength="20"
+                        pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        placeholder="Your password" required
+                        title="The password must have a 8-20 characters. At least one number & one uppercase letter.">
+                      <div id="passwordHelp" class="form-text">8-20 characters. At least one number & one uppercase
+                        letter.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                      <label class="form-check-label" for="exampleCheck1">
+                        I am at least 18 years old and not a resident of the State of
+                        Washington, Nevada or Idaho. <br>By creating an account or using the services provided on
+                        Aladdin's
+                        treasure, I agree to be bound by the Aladdin's treasure.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-lg btn-primary w-100 mt-3">Submit</button>
+                  </div>
+                </div>
+
+              </form>
+              <div class="preloader">
+                <div class="lds-facebook">
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
-
-
-            <div class="row">
-              <div class="col">
-                <button type="submit" class="btn btn-lg btn-primary w-100 mt-3">Submit</button>
-              </div>
-            </div>
-
-          </form>
-          <div class="preloader">
-            <div class="lds-facebook">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  @@include('modules/footer.html', {})
-
+    @@include('modules/footer.html', {})
+  </div>
   <script src="js/app.min.js"></script>
 </body>
 

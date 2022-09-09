@@ -1,12 +1,16 @@
 body {
-    background: linear-gradient(135deg, rgba(15, 0, 29, 1) 0%, rgb(64, 0, 124) 100%);
+    background: #360068;
+}
+
+.bg-wraper{
+    background: linear-gradient(135deg, #0f001d 0%, #40007c 100%);
     background-attachment: fixed;
 }
 
 .coins-img-1,
 .coins-img-2 {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     bottom: 0;
     left: 0;
 }
