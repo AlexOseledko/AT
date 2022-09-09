@@ -88,6 +88,8 @@ a {
 
 main {
     min-height: 100vh;
+    position: relative;
+    z-index: 3;
 }
 
 .modal-container {
@@ -155,4 +157,9 @@ main {
     right: 0;
     background: rgba(255, 255, 255, 0.24);
 
+}
+
+footer{
+    position: relative;
+    z-index: 3;
 }
